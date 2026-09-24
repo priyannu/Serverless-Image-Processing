@@ -1,25 +1,19 @@
-cd D:\projects
+# Environment
+.env
 
-mkdir local-serverless-image-pipeline
-cd local-serverless-image-pipeline
+# Generated build artifacts
+build/
 
-mkdir lambda
-mkdir infrastructure
-mkdir scripts
-mkdir test_images
-mkdir build
+# Downloaded output files
+output/
 
-New-Item lambda\lambda_function.py -ItemType File
-New-Item lambda\requirements.txt -ItemType File
+# LocalStack runtime data
+.localstack/
 
-New-Item infrastructure\setup.py -ItemType File
-New-Item scripts\deploy.ps1 -ItemType File
+# Command history
+commands.ps1
 
-New-Item test_images\sample.jpg -ItemType File
+# Python cache
+__pycache__/
+*.pyc
 
-New-Item .env -ItemType File
-New-Item .gitignore -ItemType File
-New-Item docker-compose.yml -ItemType File
-New-Item requirements.txt -ItemType File
-New-Item README.md -ItemType File
-New-Item LICENSE -ItemType File
