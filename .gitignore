@@ -1,0 +1,25 @@
+cd D:\projects
+
+mkdir local-serverless-image-pipeline
+cd local-serverless-image-pipeline
+
+mkdir lambda
+mkdir infrastructure
+mkdir scripts
+mkdir test_images
+mkdir build
+
+New-Item lambda\lambda_function.py -ItemType File
+New-Item lambda\requirements.txt -ItemType File
+
+New-Item infrastructure\setup.py -ItemType File
+New-Item scripts\deploy.ps1 -ItemType File
+
+New-Item test_images\sample.jpg -ItemType File
+
+New-Item .env -ItemType File
+New-Item .gitignore -ItemType File
+New-Item docker-compose.yml -ItemType File
+New-Item requirements.txt -ItemType File
+New-Item README.md -ItemType File
+New-Item LICENSE -ItemType File
